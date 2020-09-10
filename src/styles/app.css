@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #f1f6fb;
+    overflow-x: hidden;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .slick-slider {
+      max-width: 1024px;
+      margin: auto;
+  }
+  
+  .MuiCardActions-spacing > :not(:first-child) {
+    margin-left: 0px !important;
+  }
+  
+  .slick-prev:before {
+    content: '';
+  }
+
+  .slick-next {
+    right: 0px;
+}
+  
+  .slick-next:before {
+    content: '';
+  }
+
+  .slick-list {
+    padding: 15px 0px !important;
+  }
+
+  .slick-next:focus, .slick-next:hover, .slick-prev:focus, .slick-prev:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  @keyframes bounce {
+    from { transform: translate3d(0, 0, 0); }
+    to   { transform: translate3d(0, 6px, 0); }
+  }
+  
+  @media (max-width: 767px) {
+    .slick-slider {
+      margin: 27px;
+    }
+    .slick-arrow {
+      display: none !important;
+    }
+  }
+  
